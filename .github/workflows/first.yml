@@ -4,7 +4,8 @@ on: push
 jobs:
  exemplojob:                    
   runs-on: ubunto-latest        
-  steps:                      
+  steps:
+   - uses: actions/checkout@v4
    - name: Print Oi            
      run: echo "Hello World!"  
    - name: Print Tchau           
