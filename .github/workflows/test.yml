@@ -15,9 +15,9 @@ jobs:
         with:
           node-version: 18
       - name: Install dependencies
-        run: npm ci
+        run: cd second-action-react && npm ci
       - name: Run tests
-        run: npm test
+        run: cd second-action-react npm test
     
           
         
