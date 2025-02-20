@@ -1,0 +1,24 @@
+name: Practice Project Workflow 2
+on:
+  push:
+    paths:
+      - 'Practice-Basic-Actions'
+      - '.github/workflows/practice2.yml'
+jobs:
+  deploy: 
+    runs-on: ubuntu-latest
+    steps:
+      - name: Get Code
+        uses: actions/checkout@v4
+      - name: Install Dependencies
+        run: cd Practice-Basic-Actions && npm ci
+      - name: Lint Scripts
+        run: cd Practice-Basic-Actions && npm run lint
+      - name: Run Tests
+        run: cd Practice-Basic-Actions && npm run test
+      - name: Build code
+        run: cd Practice-Basic-Actions && npm run build
+      - name: Deploy Code
+        run: echo "Deployment..."
+      
+    
