@@ -1,6 +1,7 @@
 # github-actions
-Repositório criado para aprender e criar um material basico de como usar o actions, suas funcionalidades, como funcionam os workflows, etc. (Parte 1)
+Repositório criado para aprender e criar um material basico de como usar o actions.
 
+**Parte 1 explica os termos, o que é um workflow, jobs, steps, events, .yml, estrutura**
 
 Parte 1: [Actions básico](https://github.com/PedroPassos87/github-actions-parte1)
 
